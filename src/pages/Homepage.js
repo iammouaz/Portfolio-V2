@@ -40,6 +40,9 @@ function Homepage() {
         <Element name="section-about">
           <About />
         </Element>
+        <Element name="section-brandlogos">
+          <Brandlogos />
+        </Element>
         <Element name="section-services">
           <Services />
         </Element>
@@ -48,9 +51,6 @@ function Homepage() {
         </Element>
         <Element name="section-works">
           <Works />
-        </Element>
-        <Element name="section-brandlogos">
-          <Brandlogos />
         </Element>
         <Element name="section-contact">
           <Contact />

@@ -1,0 +1,25 @@
+{
+  "files": {
+    "main.css": "/iammouaz.github.io/Portfolio-V2/static/css/main.d87657f6.chunk.css",
+    "main.js": "/iammouaz.github.io/Portfolio-V2/static/js/main.895c90ae.chunk.js",
+    "main.js.map": "/iammouaz.github.io/Portfolio-V2/static/js/main.895c90ae.chunk.js.map",
+    "runtime-main.js": "/iammouaz.github.io/Portfolio-V2/static/js/runtime-main.ad07b445.js",
+    "runtime-main.js.map": "/iammouaz.github.io/Portfolio-V2/static/js/runtime-main.ad07b445.js.map",
+    "static/css/2.64da2daa.chunk.css": "/iammouaz.github.io/Portfolio-V2/static/css/2.64da2daa.chunk.css",
+    "static/js/2.d74e5850.chunk.js": "/iammouaz.github.io/Portfolio-V2/static/js/2.d74e5850.chunk.js",
+    "static/js/2.d74e5850.chunk.js.map": "/iammouaz.github.io/Portfolio-V2/static/js/2.d74e5850.chunk.js.map",
+    "index.html": "/iammouaz.github.io/Portfolio-V2/index.html",
+    "static/css/2.64da2daa.chunk.css.map": "/iammouaz.github.io/Portfolio-V2/static/css/2.64da2daa.chunk.css.map",
+    "static/css/main.d87657f6.chunk.css.map": "/iammouaz.github.io/Portfolio-V2/static/css/main.d87657f6.chunk.css.map",
+    "static/js/2.d74e5850.chunk.js.LICENSE.txt": "/iammouaz.github.io/Portfolio-V2/static/js/2.d74e5850.chunk.js.LICENSE.txt",
+    "static/media/App.scss": "/iammouaz.github.io/Portfolio-V2/static/media/map.a1fe1300.svg",
+    "static/media/slick-theme.css": "/iammouaz.github.io/Portfolio-V2/static/media/slick.c94f7671.ttf"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.ad07b445.js",
+    "static/css/2.64da2daa.chunk.css",
+    "static/js/2.d74e5850.chunk.js",
+    "static/css/main.d87657f6.chunk.css",
+    "static/js/main.895c90ae.chunk.js"
+  ]
+}

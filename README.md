@@ -65,10 +65,9 @@ Brand new portfolio to show more about my past projects while using good practic
 ### Built With
 
 * [TypeScript](https://www.typescriptlang.org/)
-* [Node.js](https://nodejs.org/en/)
 * [React.js](https://reactjs.org/)
-* [Next.js](https://nextjs.org/)
 * [TailwindCSS](https://tailwindcss.com/)
+* [Chakra-Ui](https://chakra-ui.com/)
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
@@ -116,9 +115,8 @@ Open the page and check out my contact informations, Resume, and projects.
 ## Roadmap
 
 - [X] Make portfolio using React, Bootstra.
-- [X] Create Dark/Light toggle
 - [x] Add all past GitHub projects
-- [ ] Use DOMPurify to Sanitize the markup from dangerouslySetInnerHTML
+- [] Create Dark/Light toggle
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 

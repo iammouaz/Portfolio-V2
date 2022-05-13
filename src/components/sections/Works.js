@@ -48,8 +48,8 @@ const allData = [
     id: 4,
     title: "Book Store - Interface",
     category: "frontend",
-    image: "images/works/book.png",
-    popupLink: ["images/works/book.png"],
+    image: "images/works/Book.png",
+    popupLink: ["images/works/Book.png"],
   },
   {
     id: 5,

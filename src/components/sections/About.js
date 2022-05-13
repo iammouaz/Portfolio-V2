@@ -6,7 +6,7 @@ import Skill from "../elements/Skill";
 
 const aboutContent = {
   name: "Mouaz",
-  avatarImage: "images/me_working.JPG",
+  avatarImage: "images/me_working.jpg",
   content:
     "I am Mouaz El Molkey, Full Stack Developer. I have rich experience in web site design and building and customization with Javascript Libraries Such as React",
 };

@@ -27,7 +27,7 @@ function Herosection(props) {
           <img
             src="images/me.jpg"
             alt="Bolby"
-            className="mb-4 rounded-circle w-25"
+            className="mb-4 rounded-3 w-25"
           />
           <h1 className="mb-2 mt-0">Mouaz El Molkey</h1>
           <p>

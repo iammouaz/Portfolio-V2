@@ -6,7 +6,7 @@ import Skill from "../elements/Skill";
 
 const aboutContent = {
   name: "Mouaz",
-  avatarImage: "images/me_working.jpg",
+  avatarImage: "images/me_working.JPG",
   content:
     "I am Mouaz El Molkey, Full Stack Developer. I have rich experience in web site design and building and customization with Javascript Libraries Such as React",
 };
@@ -31,7 +31,7 @@ const progressData = [
     progressColor: "#6C6CE5",
   },
   {
-    id: 2,
+    id: 4,
     title: "Node.JS",
     percantage: 70,
     progressColor: "#FF4C60",
@@ -68,7 +68,7 @@ function About() {
           <div className="col-md-3">
             <div className="text-center text-md-left">
               <img
-                className="rounded-circle"
+                className="rounded-3"
                 src={aboutContent.avatarImage}
                 alt={aboutContent.name}
               />

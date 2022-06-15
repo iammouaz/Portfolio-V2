@@ -1,10 +1,8 @@
 import React, { useState } from "react";
-import ReactCursorPosition from "react-cursor-position";
 import { Element } from "react-scroll";
 import Header from "../components/layouts/Header";
 import About from "../components/sections/About";
 import Brandlogos from "../components/sections/Brandlogos";
-import BrandlogosDark from "../components/sections/BrandlogosDark";
 import Contact from "../components/sections/Contact";
 import Experiences from "../components/sections/Experiences";
 import Herosection from "../components/sections/Herosection";

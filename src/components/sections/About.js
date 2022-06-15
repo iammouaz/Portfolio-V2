@@ -1,5 +1,6 @@
 import React from "react";
 import TrackVisibility from "react-on-screen";
+import AnimatedButton from "../animation/AnimatedButton/AnimatedButton";
 import Counter from "../elements/Counter";
 import Pagetitle from "../elements/Pagetitle";
 import Skill from "../elements/Skill";
@@ -97,7 +98,7 @@ function About() {
                   ></div>
                 </div>
                 <div className="col-md-6 row justify-content-center">
-                  {progressData.map((progress) => (
+                  {/* {progressData.map((progress) => (
                     <TrackVisibility
                       once
                       key={progress.id}
@@ -105,7 +106,8 @@ function About() {
                     >
                       <Skill progress={progress} />
                     </TrackVisibility>
-                  ))}
+                  ))} */}
+                  <AnimatedButton />
                 </div>
               </div>
             </div>

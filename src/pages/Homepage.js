@@ -1,6 +1,6 @@
 import React, { useState } from "react";
-import ReactCursorPosition from "react-cursor-position";
 import { Element } from "react-scroll";
+import { CircleLoader } from "../components/elements/CircleLoader";
 import Header from "../components/layouts/Header";
 import About from "../components/sections/About";
 import Brandlogos from "../components/sections/Brandlogos";
@@ -32,10 +32,9 @@ function Homepage() {
         headerToggler={headerToggler}
       />
       <main className={toggleMenu ? "content open" : "content"}>
+        <CircleLoader />
         <Element name="section-home">
-          <ReactCursorPosition>
-            <Herosection />
-          </ReactCursorPosition>
+          <Herosection />
         </Element>
         <Element name="section-about">
           <About />

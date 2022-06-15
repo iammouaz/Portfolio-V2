@@ -6,7 +6,7 @@ import Pagetitle from "../elements/Pagetitle";
 
 const aboutContent = {
   name: "Mouaz",
-  avatarImage: "images/me_working.jpg",
+  avatarImage: "images/me_working.JPG",
   content:
     "I am Mouaz El Molkey, Full Stack Developer. I offer rich experience in website design, development and customization with JavaScript & Ruby libraries.",
 };

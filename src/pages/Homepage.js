@@ -1,6 +1,5 @@
 import React, { useState } from "react";
 import { Element } from "react-scroll";
-import { CircleLoader } from "../components/elements/CircleLoader";
 import Header from "../components/layouts/Header";
 import About from "../components/sections/About";
 import Brandlogos from "../components/sections/Brandlogos";
@@ -10,7 +9,8 @@ import Herosection from "../components/sections/Herosection";
 import Services from "../components/sections/Services";
 import Works from "../components/sections/Works";
 
-function Homepage() {
+function Homepage({ setStyle, style }) {
+  document.body.classList.remove("dark");
   const [toggleMenu, setToggleMenu] = useState(false);
 
   const headerToggler = (e) => {
@@ -30,9 +30,10 @@ function Homepage() {
         logoSource="/images/logo.svg"
         toggleMenu={toggleMenu}
         headerToggler={headerToggler}
+        setStyle={setStyle}
+        style={style}
       />
       <main className={toggleMenu ? "content open" : "content"}>
-        <CircleLoader />
         <Element name="section-home">
           <Herosection />
         </Element>

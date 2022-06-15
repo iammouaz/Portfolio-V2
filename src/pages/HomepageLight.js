@@ -10,7 +10,7 @@ import Herosection from "../components/sections/Herosection";
 import Services from "../components/sections/Services";
 import Works from "../components/sections/Works";
 
-function HomepageLight() {
+function HomepageLight({ setStyle, style }) {
   document.body.classList.remove("dark");
 
   const [toggleMenu, setToggleMenu] = useState(false);
@@ -33,6 +33,8 @@ function HomepageLight() {
         logoSource="/images/logo-dark.svg"
         toggleMenu={toggleMenu}
         headerToggler={headerToggler}
+        setStyle={setStyle}
+        style={style}
       />
       <main className={toggleMenu ? "content open" : "content"}>
         <Element name="section-home">

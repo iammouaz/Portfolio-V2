@@ -1,6 +1,12 @@
 import "./button.css";
 import { Suspense, useState } from "react";
-import { motion, MotionConfig, useMotionValue } from "framer-motion";
+import {
+  motion,
+  MotionConfig,
+  useMotionValue,
+  LazyMotion,
+  domAnimation,
+} from "framer-motion";
 import { Shapes } from "./Shapes";
 import { transition } from "./settings";
 import useMeasure from "react-use-measure";
@@ -19,6 +25,7 @@ export default function AnimatedButton() {
 
   return (
     <MotionConfig transition={transition}>
+      <LazyMotion features={domAnimation}></LazyMotion>
       <motion.button
         onClick={() => {
           window.open(

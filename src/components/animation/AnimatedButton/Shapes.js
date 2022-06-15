@@ -40,23 +40,49 @@ export function Shapes({ isHover, isPress, mouseX, mouseY }) {
 export function Lights() {
   return (
     <>
-      <spotLight color="rgb(255, 76, 96)" position={[-10, -10, -10]} intensity={0.2} />
-      <spotLight color="rgb(255, 76, 96)" position={[-10, 0, 15]} intensity={0.8} />
-      <spotLight color="rgb(255, 76, 96)" position={[-5, 20, 2]} intensity={0.5} />
-      <spotLight color="rgb(108, 108, 229)" position={[15, 10, -2]} intensity={2} />
-      <spotLight color="rgb(108, 108, 229)" position={[15, 10, 5]} intensity={1} />
-      <spotLight color="rgb(108, 108, 229)" position={[5, -10, 5]} intensity={0.8} />
+      <spotLight
+        color="rgb(255, 76, 96)"
+        position={[-10, -10, -10]}
+        intensity={0.2}
+      />
+      <spotLight
+        color="rgb(255, 76, 96)"
+        position={[-10, 0, 15]}
+        intensity={0.8}
+      />
+      <spotLight
+        color="rgb(255, 76, 96)"
+        position={[-5, 20, 2]}
+        intensity={0.5}
+      />
+      <spotLight
+        color="rgb(108, 108, 229)"
+        position={[15, 10, -2]}
+        intensity={2}
+      />
+      <spotLight
+        color="rgb(108, 108, 229)"
+        position={[15, 10, 5]}
+        intensity={1}
+      />
+      <spotLight
+        color="rgb(108, 108, 229)"
+        position={[5, -10, 5]}
+        intensity={0.8}
+      />
     </>
   );
 }
 
 export function Sphere() {
   return (
-    <motion.mesh position={[-0.5, -0.5, 0]} variants={{ hover: { z: 0.2, y: -1 } }}>
+    <motion.mesh
+      position={[-0.5, -0.5, 0]}
+      variants={{ hover: { z: 0.2, y: 1 } }}
+    >
       <torusKnotGeometry args={[0.4]} />
       <Material />
     </motion.mesh>
-
   );
 }
 
@@ -68,6 +94,7 @@ export function Cone() {
       variants={{
         hover: {
           z: 1.1,
+          y: 2,
           x: -1.5,
           rotateX: -0.2,
           rotateZ: 0.4,
@@ -87,7 +114,7 @@ export function Torus() {
       rotation={[-0.5, 0.5, 0]}
       variants={{
         hover: {
-          y: 0.8,
+          y: 2.8,
           z: 2,
           rotateY: -0.2,
         },
@@ -108,7 +135,7 @@ export function Icosahedron() {
         hover: {
           x: 1.8,
           z: 0.6,
-          y: 0.6,
+          y: 2.6,
           rotateZ: -0.5,
         },
       }}

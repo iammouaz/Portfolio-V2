@@ -1,7 +1,8 @@
 import React from "react";
 import { Link } from "react-scroll";
+import SwitchButton from "../animation/SwitchButton/SwitchButton";
 
-function Header({ light, toggleMenu, headerToggler }) {
+function Header({ light, toggleMenu, headerToggler, setStyle, style }) {
   const handleClasses = () => {
     let classes = "desktop-header-1 d-flex align-items-start flex-column";
     if (light & toggleMenu) {
@@ -37,6 +38,7 @@ function Header({ light, toggleMenu, headerToggler }) {
       </header>
       <header className={handleClasses()}>
         <nav>
+          <SwitchButton setStyle={setStyle} style={style} />
           <ul className="vertical-menu scrollspy">
             <li>
               <Link

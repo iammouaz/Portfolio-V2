@@ -116,7 +116,7 @@ Open the page and check out my contact informations, Resume, and projects.
 
 - [X] Make portfolio using React, Bootstra.
 - [x] Add all past GitHub projects
-- [] Create Dark/Light toggle
+- [x] Create Dark/Light toggle
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 

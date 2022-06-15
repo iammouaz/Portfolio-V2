@@ -3,6 +3,7 @@ import ReactCursorPosition from "react-cursor-position";
 import { Element } from "react-scroll";
 import Header from "../components/layouts/Header";
 import About from "../components/sections/About";
+import Brandlogos from "../components/sections/Brandlogos";
 import BrandlogosDark from "../components/sections/BrandlogosDark";
 import Contact from "../components/sections/Contact";
 import Experiences from "../components/sections/Experiences";
@@ -10,7 +11,7 @@ import Herosection from "../components/sections/Herosection";
 import Services from "../components/sections/Services";
 import Works from "../components/sections/Works";
 
-function HomepageDark() {
+function HomepageDark({ setStyle, style }) {
   document.body.classList.add("dark");
   const [toggleMenu, setToggleMenu] = useState(false);
 
@@ -31,15 +32,18 @@ function HomepageDark() {
         logoSource="/images/logo.svg"
         toggleMenu={toggleMenu}
         headerToggler={headerToggler}
+        setStyle={setStyle}
+        style={style}
       />
       <main className={toggleMenu ? "content open" : "content"}>
-        <Element name="section-home">
-          <ReactCursorPosition>
-            <Herosection />
-          </ReactCursorPosition>
+      <Element name="section-home">
+          <Herosection />
         </Element>
         <Element name="section-about">
           <About />
+        </Element>
+        <Element name="section-brandlogos">
+          <Brandlogos />
         </Element>
         <Element name="section-services">
           <Services />
@@ -49,9 +53,6 @@ function HomepageDark() {
         </Element>
         <Element name="section-works">
           <Works />
-        </Element>
-        <Element name="section-brandlogos">
-          <BrandlogosDark />
         </Element>
         <Element name="section-contact">
           <Contact />

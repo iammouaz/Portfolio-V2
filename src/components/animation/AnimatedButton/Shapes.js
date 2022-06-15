@@ -3,7 +3,7 @@ import { MotionConfig } from "framer-motion";
 import { useRef, useLayoutEffect } from "react";
 import { transition } from "./settings";
 import { Canvas, useThree } from "@react-three/fiber";
-import { useSmoothTransform } from "./use-smooth-transform";
+import { useSmoothTransform } from "../use-smooth-transform";
 
 export function Shapes({ isHover, isPress, mouseX, mouseY }) {
   const lightRotateX = useSmoothTransform(mouseY, spring, mouseToLightRotation);
@@ -40,22 +40,23 @@ export function Shapes({ isHover, isPress, mouseX, mouseY }) {
 export function Lights() {
   return (
     <>
-      <spotLight color="#61dafb" position={[-10, -10, -10]} intensity={0.2} />
-      <spotLight color="#61dafb" position={[-10, 0, 15]} intensity={0.8} />
-      <spotLight color="#61dafb" position={[-5, 20, 2]} intensity={0.5} />
-      <spotLight color="#f2056f" position={[15, 10, -2]} intensity={2} />
-      <spotLight color="#f2056f" position={[15, 10, 5]} intensity={1} />
-      <spotLight color="#b107db" position={[5, -10, 5]} intensity={0.8} />
+      <spotLight color="rgb(255, 76, 96)" position={[-10, -10, -10]} intensity={0.2} />
+      <spotLight color="rgb(255, 76, 96)" position={[-10, 0, 15]} intensity={0.8} />
+      <spotLight color="rgb(255, 76, 96)" position={[-5, 20, 2]} intensity={0.5} />
+      <spotLight color="rgb(108, 108, 229)" position={[15, 10, -2]} intensity={2} />
+      <spotLight color="rgb(108, 108, 229)" position={[15, 10, 5]} intensity={1} />
+      <spotLight color="rgb(108, 108, 229)" position={[5, -10, 5]} intensity={0.8} />
     </>
   );
 }
 
 export function Sphere() {
   return (
-    <motion.mesh position={[-0.5, -0.5, 0]} variants={{ hover: { z: 2 } }}>
-      <sphereGeometry args={[0.4]} />
+    <motion.mesh position={[-0.5, -0.5, 0]} variants={{ hover: { z: 0.2, y: -1 } }}>
+      <torusKnotGeometry args={[0.4]} />
       <Material />
     </motion.mesh>
+
   );
 }
 
@@ -86,7 +87,7 @@ export function Torus() {
       rotation={[-0.5, 0.5, 0]}
       variants={{
         hover: {
-          y: 0.5,
+          y: 0.8,
           z: 2,
           rotateY: -0.2,
         },
@@ -119,7 +120,7 @@ export function Icosahedron() {
 }
 
 export function Material() {
-  return <meshPhongMaterial color="#fff" specular="#61dafb" shininess={10} />;
+  return <meshPhongMaterial color="#fff" specular="#fff" shininess={10} />;
 }
 
 function Camera({ mouseX, mouseY, ...props }) {

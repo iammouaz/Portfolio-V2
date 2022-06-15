@@ -21,6 +21,7 @@ export default function AnimatedButton() {
     <MotionConfig transition={transition}>
       <motion.button
         ref={ref}
+        className="animated-button"
         initial={false}
         animate={isHover ? "hover" : "rest"}
         whileTap="press"
@@ -69,7 +70,7 @@ export default function AnimatedButton() {
           variants={{ hover: { scale: 0.85 }, press: { scale: 1.1 } }}
           className="label"
         >
-          play
+          Download CV
         </motion.div>
       </motion.button>
     </MotionConfig>

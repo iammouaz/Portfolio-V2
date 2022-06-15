@@ -2,6 +2,7 @@ import React from "react";
 import Typed from "react-typed";
 import { Link } from "react-scroll";
 import Parallax from "./Parallax";
+import { motion } from "framer-motion";
 import ReactCursorPosition from "react-cursor-position";
 
 function Herosection(props) {
@@ -41,31 +42,51 @@ function Herosection(props) {
           </p>
 
           <ul className="social-icons light list-inline mb-0 mt-4">
-            <li className="list-inline-item">
+            <motion.li
+              whileHover={{ scale: 2, rotate: [0, 30, -30, 0] }}
+              whileTap={{ scale: 1.5 }}
+              className="list-inline-item"
+            >
               <a href="https://www.instagram.com/moazmulki/">
                 <i className="fab fa-instagram"></i>
               </a>
-            </li>
-            <li className="list-inline-item">
+            </motion.li>
+            <motion.li
+              whileHover={{ scale: 2, rotate: [0, 30, -30, 0] }}
+              whileTap={{ scale: 1.5 }}
+              className="list-inline-item"
+            >
               <a href="https://twitter.com/MoazMulki1">
                 <i className="fab fa-twitter"></i>
               </a>
-            </li>
-            <li className="list-inline-item">
+            </motion.li>
+            <motion.li
+              whileHover={{ scale: 2, rotate: [0, 30, -30, 0] }}
+              whileTap={{ scale: 1.5 }}
+              className="list-inline-item"
+            >
               <a href="https://github.com/iammouaz">
                 <i class="fab fa-github"></i>
               </a>
-            </li>
-            <li className="list-inline-item">
+            </motion.li>
+            <motion.li
+              whileHover={{ scale: 2, rotate: [0, 30, -30, 0] }}
+              whileTap={{ scale: 1.5 }}
+              className="list-inline-item"
+            >
               <a href="https://www.linkedin.com/in/mouaz-molki/">
                 <i className="fab fa-linkedin-in"></i>
               </a>
-            </li>
-            <li className="list-inline-item">
+            </motion.li>
+            <motion.li
+              whileHover={{ scale: 2, rotate: [0, 30, -30, 0] }}
+              whileTap={{ scale: 1.5 }}
+              className="list-inline-item"
+            >
               <a href="https://angel.co/u/mouazmolkey">
                 <i className="fab fa-angellist"></i>
               </a>
-            </li>
+            </motion.li>
           </ul>
 
           <div className="mt-4">

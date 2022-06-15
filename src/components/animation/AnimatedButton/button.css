@@ -1,26 +1,21 @@
-
-button {
-  --purple: #db07d1;
-  --pink: #f2056f;
-  --blue: #61dafb;
+.animated-button {
+  --red: rgb(255, 76, 96);
+  --pink: rgb(255, 209, 92);
+  --blue: rgb(108, 108, 229);
   appearance: none;
   border: none;
   cursor: pointer;
-  background-color: #acc7ed;
+  background-color: rgb(255, 76, 96);
   color: #fff;
   border-radius: 60px;
   outline: none;
   margin: 0;
   padding: 12px 25px;
-  font-family: "Poppins";
-  font-size: 48px;
-  font-weight: 600;
-  line-height: 48px;
   letter-spacing: -1px;
   position: relative;
   text-align: center;
   display: flex;
-  align-items: center;
+  align-items: flex-end;
 }
 
 .shapes {
@@ -32,9 +27,9 @@ button {
   border-radius: 60px;
   background: linear-gradient(
     60deg,
-    var(--blue) 0%,
-    #d6cbf6 30%,
-    var(--pink) 70%
+    var(--red) 0%,
+    var(--red) 30%,
+    var(--red) 70%
   );
 }
 
@@ -48,12 +43,12 @@ button {
 
 .blush.pink {
   right: 20px;
-  background: var(--purple);
+  background: var(--blue);
 }
 
 .blush.blue {
   left: 20px;
-  background: var(--blue);
+  background: var(--red);
 }
 
 .shapes .container {
@@ -84,14 +79,14 @@ button {
   display: block;
 }
 
-.number {
+.number-animate {
   padding: 20px 0;
   width: 88px;
   position: relative;
   transform: translateZ(0);
 }
 
-.number:before {
+.number-animate:before {
   content: "";
   position: absolute;
   left: 0;

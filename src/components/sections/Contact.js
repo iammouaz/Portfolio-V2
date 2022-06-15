@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import ScrollAnimation from "react-animate-on-scroll";
+import { motion } from "framer-motion";
 import Pagetitle from "../elements/Pagetitle";
 import { useForm } from "@formspree/react";
 
@@ -155,6 +156,45 @@ function Contact() {
               </button>
             </form>
             {handleAlerts()}
+            <ul className="social-icons light list-inline mb-0 mt-4">
+              <motion.li
+                whileHover={{ scale: 2, rotate: [0, 30, -30, 0] }}
+                whileTap={{ scale: 1.5 }} className="list-inline-item">
+                <a href="https://www.instagram.com/moazmulki/">
+                  <i className="fab fa-instagram"></i>
+                </a>
+              </motion.li>
+              <motion.li
+                whileHover={{ scale: 2, rotate: [0, 30, -30, 0] }}
+                whileTap={{ scale: 1.5 }} className="list-inline-item">
+                <a href="https://twitter.com/MoazMulki1">
+                  <i className="fab fa-twitter"></i>
+                </a>
+              </motion.li>
+              <motion.li
+                whileHover={{ scale: 2, rotate: [0, 30, -30, 0] }}
+                whileTap={{ scale: 1.5 }}
+                className="list-inline-item"
+              >
+                <a href="https://github.com/iammouaz">
+                  <i class="fab fa-github"></i>
+                </a>
+              </motion.li>
+              <motion.li
+                whileHover={{ scale: 2, rotate: [0, 30, -30, 0] }}
+                whileTap={{ scale: 1.5 }} className="list-inline-item">
+                <a href="https://www.linkedin.com/in/mouaz-molki/">
+                  <i className="fab fa-linkedin-in"></i>
+                </a>
+              </motion.li>
+              <motion.li
+                whileHover={{ scale: 2, rotate: [0, 30, -30, 0] }}
+                whileTap={{ scale: 1.5 }} className="list-inline-item">
+                <a href="https://angel.co/u/mouazmolkey">
+                  <i className="fab fa-angellist"></i>
+                </a>
+              </motion.li>
+            </ul>
           </div>
         </div>
       </div>

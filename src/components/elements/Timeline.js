@@ -1,7 +1,7 @@
 import React from "react";
 import ScrollAnimation from "react-animate-on-scroll";
 
-function Timeline({ education }) {
+function Timeline({ education, type }) {
   const { years, title, content, company, location } = education;
   return (
     <ScrollAnimation
@@ -16,7 +16,15 @@ function Timeline({ education }) {
           <span style={{ fontStyle: "italic" }} className="p-4">
             {company} - <span className="font-weight-bold"> {location}</span>
           </span>
-          <p>{content}</p>
+          {type === "exp" ? (
+            <ul>
+              {content.map((item) => (
+                <li>{item}</li>
+              ))}
+            </ul>
+          ) : (
+            <p>{content}</p>
+          )}
         </div>
       </div>
     </ScrollAnimation>

@@ -20,6 +20,12 @@ export default function AnimatedButton() {
   return (
     <MotionConfig transition={transition}>
       <motion.button
+        onClick={() => {
+          window.open(
+            "https://drive.google.com/file/d/1DNW2wk4SKUQanZccK-p7APpXcqlyJq6_/view",
+            "_blank"
+          );
+        }}
         ref={ref}
         className="animated-button"
         initial={false}

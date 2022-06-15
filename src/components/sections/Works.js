@@ -45,6 +45,13 @@ const allData = [
     popupLink: ["images/works/1.png", "images/works/2.png"],
   },
   {
+    id: 5,
+    title: "Wordle Game",
+    category: "fullstack",
+    image: "images/works/wrodle-1.png",
+    popupLink: ["images/works/wrodle-1.png", "images/works/wordle-2.png"],
+  },
+  {
     id: 4,
     title: "Book Store - Interface",
     category: "frontend",

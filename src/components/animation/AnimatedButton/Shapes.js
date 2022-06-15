@@ -78,7 +78,7 @@ export function Sphere() {
   return (
     <motion.mesh
       position={[-0.5, -0.5, 0]}
-      variants={{ hover: { z: 0.2, y: 1 } }}
+      variants={{ hover: { z: 0.2, y: 0.6 } }}
     >
       <torusKnotGeometry args={[0.4]} />
       <Material />
@@ -94,7 +94,7 @@ export function Cone() {
       variants={{
         hover: {
           z: 1.1,
-          y: 2,
+          y: 1.5,
           x: -1.5,
           rotateX: -0.2,
           rotateZ: 0.4,
@@ -114,7 +114,7 @@ export function Torus() {
       rotation={[-0.5, 0.5, 0]}
       variants={{
         hover: {
-          y: 2.8,
+          y: 2.2,
           z: 2,
           rotateY: -0.2,
         },
@@ -135,7 +135,7 @@ export function Icosahedron() {
         hover: {
           x: 1.8,
           z: 0.6,
-          y: 2.6,
+          y: 2.1,
           rotateZ: -0.5,
         },
       }}

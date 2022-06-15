@@ -25,67 +25,68 @@ export default function AnimatedButton() {
 
   return (
     <MotionConfig transition={transition}>
-      <LazyMotion features={domAnimation}></LazyMotion>
-      <motion.button
-        onClick={() => {
-          window.open(
-            "https://drive.google.com/file/d/1DNW2wk4SKUQanZccK-p7APpXcqlyJq6_/view",
-            "_blank"
-          );
-        }}
-        ref={ref}
-        className="animated-button"
-        initial={false}
-        animate={isHover ? "hover" : "rest"}
-        whileTap="press"
-        variants={{
-          rest: { scale: 1 },
-          hover: { scale: 1.5 },
-          press: { scale: 1.4 },
-        }}
-        onHoverStart={() => {
-          resetMousePosition();
-          setIsHover(true);
-        }}
-        onHoverEnd={() => {
-          resetMousePosition();
-          setIsHover(false);
-        }}
-        onTapStart={() => setIsPress(true)}
-        onTap={() => setIsPress(false)}
-        onTapCancel={() => setIsPress(false)}
-        onPointerMove={(e) => {
-          mouseX.set(e.clientX - bounds.x - bounds.width / 2);
-          mouseY.set(e.clientY - bounds.y - bounds.height / 2);
-        }}
-      >
-        <motion.div
-          className="shapes"
+      <LazyMotion features={domAnimation}>
+        <motion.button
+          onClick={() => {
+            window.open(
+              "https://drive.google.com/file/d/1DNW2wk4SKUQanZccK-p7APpXcqlyJq6_/view",
+              "_blank"
+            );
+          }}
+          ref={ref}
+          className="animated-button"
+          initial={false}
+          animate={isHover ? "hover" : "rest"}
+          whileTap="press"
           variants={{
-            rest: { opacity: 0 },
-            hover: { opacity: 1 },
+            rest: { scale: 1 },
+            hover: { scale: 1.5 },
+            press: { scale: 1.4 },
+          }}
+          onHoverStart={() => {
+            resetMousePosition();
+            setIsHover(true);
+          }}
+          onHoverEnd={() => {
+            resetMousePosition();
+            setIsHover(false);
+          }}
+          onTapStart={() => setIsPress(true)}
+          onTap={() => setIsPress(false)}
+          onTapCancel={() => setIsPress(false)}
+          onPointerMove={(e) => {
+            mouseX.set(e.clientX - bounds.x - bounds.width / 2);
+            mouseY.set(e.clientY - bounds.y - bounds.height / 2);
           }}
         >
-          <div className="pink blush" />
-          <div className="blue blush" />
-          <div className="container">
-            <Suspense fallback={null}>
-              <Shapes
-                isHover={isHover}
-                isPress={isPress}
-                mouseX={mouseX}
-                mouseY={mouseY}
-              />
-            </Suspense>
-          </div>
-        </motion.div>
-        <motion.div
-          variants={{ hover: { scale: 0.85 }, press: { scale: 1.1 } }}
-          className="label"
-        >
-          Download CV
-        </motion.div>
-      </motion.button>
+          <motion.div
+            className="shapes"
+            variants={{
+              rest: { opacity: 0 },
+              hover: { opacity: 1 },
+            }}
+          >
+            <div className="pink blush" />
+            <div className="blue blush" />
+            <div className="container">
+              <Suspense fallback={null}>
+                <Shapes
+                  isHover={isHover}
+                  isPress={isPress}
+                  mouseX={mouseX}
+                  mouseY={mouseY}
+                />
+              </Suspense>
+            </div>
+          </motion.div>
+          <motion.div
+            variants={{ hover: { scale: 0.85 }, press: { scale: 1.1 } }}
+            className="label"
+          >
+            Download CV
+          </motion.div>
+        </motion.button>
+      </LazyMotion>
     </MotionConfig>
   );
 }

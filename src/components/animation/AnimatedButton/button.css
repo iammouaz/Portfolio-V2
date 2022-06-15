@@ -12,7 +12,7 @@
   margin: 0;
   padding: 12px 25px;
   letter-spacing: -1px;
-  position: relative;
+  position: absolute;
   text-align: center;
   display: flex;
   align-items: flex-end;

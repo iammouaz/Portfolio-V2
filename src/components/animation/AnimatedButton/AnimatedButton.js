@@ -29,7 +29,7 @@ export default function AnimatedButton() {
         <motion.button
           onClick={() => {
             window.open(
-              "https://drive.google.com/file/d/1DNW2wk4SKUQanZccK-p7APpXcqlyJq6_/view",
+              "https://drive.google.com/file/d/1vh9qT22ak0R7RdwqzRupBY5NogmxtMxA/view?usp=sharing",
               "_blank"
             );
           }}

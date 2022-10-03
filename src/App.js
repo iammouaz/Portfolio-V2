@@ -6,7 +6,6 @@ import HomepageDark from "./pages/HomepageDark";
 function App() {
   const [style, setStyle] = useState(false);
   const currentStyle = localStorage.getItem("style");
-  console.log(style);
 
   useEffect(() => {
     if (!currentStyle) {

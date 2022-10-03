@@ -24,6 +24,20 @@ const filters = [
 
 const allData = [
   {
+    id: 6,
+    title: "L-One Systems Offical",
+    category: "fullstack",
+    image: "images/works/l-one.png",
+    link: "https://l-one-website-jamstack-l-one.vercel.app/",
+  },
+  {
+    id: 7,
+    title: "Giki",
+    category: "frontend",
+    image: "images/works/giki-logo.svg",
+    link: "https://gikidev.axensocenter.com/",
+  },
+  {
     id: 1,
     title: "Thaki Teacher Digital Toolkit",
     category: "frontend",
